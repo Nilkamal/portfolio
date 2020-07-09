@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Menu from './components/Menu/Menu';
+import MenuProvider from './providers/menu-providers/Menu-Provider';
+import styled from 'styled-components';
+import HomePage from './components/homepage/HomePage-Component';
+import { Route } from 'react-router-dom';
+
+const Container = styled.div`
+    max-width: 1100px;
+    margin: auto;
+    min-height: 100vh;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MenuProvider>
+      <Container>
+          <Menu />
+
+          <Route path='/' component={HomePage} />
+      </Container>
+  </MenuProvider>
   );
 }
 
