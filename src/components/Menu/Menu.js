@@ -4,11 +4,10 @@ import logo from '../../logo.png';
 import './menu-styles.css';
 
 export default () => {
-    const { toggleMenu, menuOpen } = useContext(MenuContext);
-    console.log(MenuContext);
+    const { toggleMenu, menuOpen, goHome } = useContext(MenuContext);
     return ( 
         <div className='menu'>
-            <img src={logo} alt="Logo" height="100"/>
+            <img src={logo} alt="Logo" height="100" onClick={goHome} />
         
             <div className={`container  ${menuOpen && 'change'}`} onClick={toggleMenu}>
                 <div className = 'bar1'></div> 

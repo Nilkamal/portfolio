@@ -3,12 +3,14 @@ import Menu from './components/Menu/Menu';
 import MenuProvider from './providers/menu-providers/Menu-Provider';
 import styled from 'styled-components';
 import HomePage from './components/homepage/HomePage-Component';
+import NavBar from './components/navbar/NavBar.component';
 import { Route } from 'react-router-dom';
 
 const Container = styled.div`
     max-width: 1100px;
+    width: 100%;
     margin: auto;
-    min-height: 100vh;
+    overflow-y: hidden;
 `;
 
 function App() {
@@ -16,8 +18,9 @@ function App() {
     <MenuProvider>
       <Container>
           <Menu />
-
-          <Route path='/' component={HomePage} />
+          <Route path='/menu' component={NavBar} />
+          <Route exact path='/' component={HomePage} />
+          
       </Container>
   </MenuProvider>
   );
