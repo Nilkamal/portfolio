@@ -3,6 +3,10 @@
   justify-content: space-between;
 }
 
+img {
+  cursor: pointer;
+}
+
 .container {
     cursor: pointer;
     display: inline-block;
