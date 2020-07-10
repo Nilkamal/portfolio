@@ -6,7 +6,7 @@ export default () => {
         <div className="nav-bar">
             <section className='nav-links'>
                 <ul>
-                    <li className='animate__animated animate__bounce'>
+                    <li className='animate__animated animate__rubberBand'>
                         <a href='/info' rel="noopener noreferrer">Info</a>
                     </li>
                     <li>
