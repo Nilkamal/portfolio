@@ -9,8 +9,10 @@ import { Route } from 'react-router-dom';
 const Container = styled.div`
     max-width: 1100px;
     width: 100%;
+    position: relative;
+    height: 100%;
     margin: auto;
-    overflow-y: hidden;
+    overflow: hidden;
 `;
 
 function App() {
@@ -20,7 +22,6 @@ function App() {
           <Menu />
           <Route path='/menu' component={NavBar} />
           <Route exact path='/' component={HomePage} />
-          
       </Container>
   </MenuProvider>
   );
