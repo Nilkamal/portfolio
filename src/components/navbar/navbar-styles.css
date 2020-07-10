@@ -1,0 +1,51 @@
+.nav-bar {
+    color: #ccc;;
+}
+
+.nav-links {
+    padding-top: 2rem;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links ul > li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-family: 'Galada', cursive;
+}
+
+.social-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.social-icons ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons ul > li {
+    list-style: none;
+    display: flex;
+    margin-right: 12px;
+    justify-content: space-between;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.social-icons ul > li:hover  {
+    border: 1px solid gray;
+}
+
+.social-icons ul > li a {
+    text-decoration: none;
+}

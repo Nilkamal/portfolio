@@ -7,12 +7,18 @@ export default () => {
     const { toggleMenu, menuOpen, goHome } = useContext(MenuContext);
     return ( 
         <div className='menu'>
-            <img src={logo} alt="Logo" height="100" onClick={goHome} />
-        
-            <div className={`container  ${menuOpen && 'change'}`} onClick={toggleMenu}>
-                <div className = 'bar1'></div> 
-                <div className = 'bar2'></div> 
-                <div className = 'bar3'></div> 
+            <div className='container'>
+                <nav className='navigation'>
+                    <img src={logo} alt="Logo" height="100" onClick={goHome} />
+
+                    <div className={`${menuOpen ? 'open' : ''}`} style={{padding: '2rem'}} onClick={toggleMenu}>
+                        <i class="icon-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </i>
+                    </div>
+                </nav>
             </div>
         </div>
     );
