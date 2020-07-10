@@ -1,19 +1,22 @@
-import React from 'react';
-import './navbar-styles.css'
+import React, { createRef } from 'react';
+import './navbar-styles.css';
 import 'animate.css'; 
 
 export default () => {
+    const infoRef = createRef();
+    const projectsRef = createRef();
+    const resumeRef = createRef();
     return (
         <div className="nav-bar">
             <section className='nav-links'>
                 <ul>
-                    <li className='animate__animated animate__bounce'>
+                    <li className='animate__animated' ref={infoRef} onMouseEnter={(e) => infoRef.current.classList.toggle('animate__tada')}>
                         <a href='/info' rel="noopener noreferrer">Info</a>
                     </li>
-                    <li>
+                    <li className='animate__animated' ref={projectsRef} onMouseEnter={(e) => projectsRef.current.classList.toggle('animate__tada')}>
                         <a href='/projects/' rel="noopener noreferrer">Projects</a>
                     </li>
-                    <li>
+                    <li className='animate__animated' ref={resumeRef} onMouseEnter={(e) => resumeRef.current.classList.toggle('animate__tada')}>
                         <a href='/resume' rel="noopener noreferrer">Resume</a>
                     </li>
                 </ul>
