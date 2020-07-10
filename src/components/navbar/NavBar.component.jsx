@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar-styles.css'
+import 'animate.css';
 export default () => {
     return (
         <div className="nav-bar">
