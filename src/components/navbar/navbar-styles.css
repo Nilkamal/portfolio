@@ -19,7 +19,8 @@
     flex-direction: column;
     line-height: 1.5;
     font-size: 3rem;
-    font-family: 'Galada', cursive;
+    font-family: 'Dancing Script','Galada', cursive;
+    letter-spacing: 1.1rem;
 }
 
 .social-icons {
