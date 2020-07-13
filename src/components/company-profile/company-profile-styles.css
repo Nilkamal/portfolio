@@ -1,0 +1,14 @@
+
+.company-profile {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.company-profile-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.company-profile .tag {
+    padding: 6px;
+}

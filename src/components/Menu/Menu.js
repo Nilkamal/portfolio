@@ -12,7 +12,7 @@ export default () => {
                     <img src={logo} alt="Logo" height="100" onClick={goHome} />
 
                     <div className={`${menuOpen ? 'open' : ''}`} style={{padding: '2rem'}} onClick={toggleMenu}>
-                        <i class="icon-burger">
+                        <i className="icon-burger">
                             <span></span>
                             <span></span>
                             <span></span>

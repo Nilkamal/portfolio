@@ -1,0 +1,22 @@
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.project-list {
+    width: 80%;
+}
+
+.project-list .main-title {
+    font-family: 'Galada', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.project { 
+    margin-top: -2rem;
+}
+
+.projects .links {
+    padding-top: 1rem;
+}
