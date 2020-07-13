@@ -7,6 +7,8 @@ import NavBar from './components/navbar/NavBar.component';
 import { Route } from 'react-router-dom';
 import 'animate.css'; 
 import Projects from './components/projects/projects-component';
+import CompanyProfileContainer from './components/company-profile/company-container-component';
+import CompanyDetail from './components/company-profile/company-detail-component';
 
 const Container = styled.div`
     max-width: 1100px;
@@ -25,6 +27,8 @@ function App() {
           <Route exact path='/' component={HomePage} />
           <Route path='/menu' component={NavBar} />
           <Route path='/projects' component={Projects} />
+          <Route path='/company-profile' component={CompanyProfileContainer} />
+          <Route path='/company-detail/:company_name' component={CompanyDetail} />
 
       </Container>
   </MenuProvider>

@@ -26,7 +26,7 @@ export default () => {
                     <li className='animate__animated' ref={resumeRef} onMouseEnter={(e) => {
                         projectsRef.current.classList.toggle('animate__tada');
                     }}>
-                        <Link to='/resume' onClick={(e) => toggleMenu(e,'links')}  rel="noopener noreferrer">Resume</Link>
+                        <Link to='/company-profile' onClick={(e) => toggleMenu(e,'links')}  rel="noopener noreferrer">Resume</Link>
                     </li>
                 </ul>
             </section>

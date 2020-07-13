@@ -20,8 +20,6 @@ export default () => {
                                 <a href="https://www.verizon.com">Take me there</a>
                             </div>
                         </li>
-                        
-                        
                     </ul>
                 </div>
             </div>
