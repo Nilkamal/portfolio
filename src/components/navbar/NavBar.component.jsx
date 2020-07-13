@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default () => {
     const infoRef = createRef();
     const projectsRef = createRef();
-    const resumeRef = createRef();
+    const companyRef = createRef();
     const { toggleMenu } = useContext(MenuContext);
 
     return (
@@ -23,8 +23,8 @@ export default () => {
                     }}>
                         <Link to='/projects/' onClick={(e) => toggleMenu(e,'links')} rel="noopener noreferrer">Projects</Link>
                     </li>
-                    <li className='animate__animated' ref={resumeRef} onMouseEnter={(e) => {
-                        projectsRef.current.classList.toggle('animate__tada');
+                    <li className='animate__animated' ref={companyRef} onMouseEnter={(e) => {
+                        companyRef.current.classList.toggle('animate__tada');
                     }}>
                         <Link to='/company-profile' onClick={(e) => toggleMenu(e,'links')}  rel="noopener noreferrer">Companies Worked For</Link>
                     </li>
