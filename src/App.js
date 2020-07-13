@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import HomePage from './components/homepage/HomePage-Component';
 import NavBar from './components/navbar/NavBar.component';
 import { Route } from 'react-router-dom';
+import 'animate.css'; 
+import Projects from './components/projects/projects-component';
 
 const Container = styled.div`
     max-width: 1100px;
@@ -20,8 +22,10 @@ function App() {
     <MenuProvider>
       <Container>
           <Menu />
-          <Route path='/menu' component={NavBar} />
           <Route exact path='/' component={HomePage} />
+          <Route path='/menu' component={NavBar} />
+          <Route path='/projects' component={Projects} />
+
       </Container>
   </MenuProvider>
   );

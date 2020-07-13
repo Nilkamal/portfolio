@@ -4,29 +4,31 @@ export const MenuContext = createContext({
     menuOpen: false, 
     toggleMenu:() => {},
     goHome: () => {},
+    linkClicked: () => {},
     background: '#000',
     
 });
 
 const MenuProvider = ({children, history}) => {
     const [menuOpen, setMenuOpen] = useState(false);
-   
+
     useEffect(() => {
         if (menuOpen) {
             history.push('/menu');
-        } else {
-            history.push('/');
-        }
+        } 
     },[menuOpen, history])
 
-    const toggleMenu = () => {
+    const toggleMenu = (e, from = 'menu') => {
         setMenuOpen(!menuOpen)
+        if(from === 'menu' && menuOpen) {
+            history.push('/');
+        }
     }
 
     const goHome = () => {
         history.push('/');
     }
-
+  
     return (
         <MenuContext.Provider value={{
             toggleMenu, 
