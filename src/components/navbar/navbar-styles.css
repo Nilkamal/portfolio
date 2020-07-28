@@ -7,16 +7,18 @@
 }
 
 .nav-links ul {
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-direction: column;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: (8, 1fr);
+    /* flex-direction: column; */
+    /* align-items: center; */
     align-items: center;
+    justify-items: center;
 }
 
 .nav-links ul > li {
     list-style: none;
-    display: flex;
-    flex-direction: column;
     line-height: 1.5;
     font-size: 3rem;
     font-family: 'Dancing Script','Galada', cursive;
@@ -29,18 +31,42 @@
 }
 
 .social-icons ul {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: ". GitHub LinkedIn FaceBook Twitter Instagram . .";
+    /* justify-content: center; */
 }
 
 .social-icons ul > li {
     list-style: none;
     display: flex;
-    margin-right: 12px;
     justify-content: space-between;
     border-radius: 50%;
     border: 1px solid #ccc;
     padding: 12px;
+}
+
+.social-icons ul > li:nth-child(1) {
+    grid-area: GitHub;
+}
+
+.social-icons ul > li:nth-child(2) {
+    grid-area: LinkedIn;
+}
+
+.social-icons ul > li:nth-child(3) {
+    grid-area: FaceBook;
+}
+
+.social-icons ul > li:nth-child(4) {
+    grid-area: Twitter;
+}
+
+.social-icons ul > li:nth-child(5) {
+    grid-area: Instagram;
 }
 
 .social-icons ul > li:hover  {

@@ -2,6 +2,9 @@
 h1 {
     margin-bottom: 0;
 }
+.company-detail {
+    padding: 13px 0;
+}
 .company-name .duration {
     color: gray;
     font-size: 4rem;

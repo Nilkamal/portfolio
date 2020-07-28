@@ -8,9 +8,7 @@ export default () => {
     return (
         data.length > 0 && (
             <div className='company-container'>
-            
                 {
-                   
                     data.map((item, index) => {
                         return <CompanyProfile data={item} key={index} />
                     })
