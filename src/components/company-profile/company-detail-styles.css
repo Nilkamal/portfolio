@@ -6,7 +6,7 @@ h1 {
     padding: 13px 0;
 }
 .company-name .duration {
-    color: gray;
+    color: #6c757d;
     font-size: 4rem;
 }
 
@@ -15,3 +15,6 @@ h1 {
     margin-top: 1rem;
 }
 
+.company-detail {
+ padding-left: 12px;   
+}

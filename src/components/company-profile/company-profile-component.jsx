@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+
 import './company-profile-styles.css';
 
 export default ({data}) => {
@@ -11,7 +13,7 @@ export default ({data}) => {
                 <p>{data.duration}</p>
                 <p>{data.title}</p>
                 { data.links && (
-                        <a href={data.links.url} rel="noopener noreferrer">{data.links.text}</a>
+                        <Link to={data.links.url} rel="noopener noreferrer">{data.links.text}</Link>
                 )}
 
                 

@@ -14,7 +14,7 @@ export default () => {
         <HomeContainer>
             <div className="card">
                 <div className="card-body">
-                    <div className="card-title">Nilkamal Shah</div>
+                    <div className="card-title animate__heartBeat">Nilkamal Shah</div>
                     <div className="card-subtitle mb-2 text-muted">Full Stack Software Engineer</div>
                     <div className="card-text">
                     <p className='card-text'>
